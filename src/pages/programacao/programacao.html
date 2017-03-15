@@ -7,22 +7,14 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="home"> 
-  <!--<ion-list *ngIf="programacao"> 
-    <ion-item *ngFor="let programacao of programacao"> 
-      <ion-label>{{programacao.curso}}</ion-label> 
-    </ion-item> 
-  </ion-list>  -->
-
-  <ion-card *ngFor="let programacao of programacao">
-
+<ion-content class="home">
+  <ion-card (click)="goToProgramacaoDetail(programacao)" *ngFor="let programacao of programacao">
     <div>
       <img src="{{ programacao.imagem }}"/>
     </div>
-
     <ion-card-content>
       <ion-card-title>
-       <h2><strong> {{ programacao.curso }}</strong></h2>
+        <h2><strong> {{ programacao.curso }}</strong></h2>
       </ion-card-title>
       <p>Data: {{programacao.dataInicial}} | {{programacao.horaInicial}} as {{programacao.horaFinal}}</p>
       <p>Local: {{programacao.local}} </p>

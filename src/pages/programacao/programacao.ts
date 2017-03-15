@@ -1,3 +1,4 @@
+import { ProgramacaoDetailPage } from './../programacao-detail/programacao-detail';
 import { ProgramacaoItens } from './../../model/programacaoItens';
 import { Fire } from './../../providers/fire';
 import { Component, NgZone } from '@angular/core';
@@ -27,6 +28,12 @@ export class Programacao  {
         this.programacao = innerArray;
       })
     })
+  }
+
+  goToProgramacaoDetail(programacao){
+    this.navCtrl.push(ProgramacaoDetailPage, {
+      programacao: programacao
+    });
   }
 
 

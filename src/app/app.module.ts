@@ -1,3 +1,4 @@
+import { ProgramacaoDetailPage } from './../pages/programacao-detail/programacao-detail';
 import { SobreNos } from './../pages/sobreNos/sobreNos';
 import { Programacao } from './../pages/programacao/programacao';
 import { Fire } from './../providers/fire';
@@ -9,7 +10,8 @@ import { MyApp } from './app.component';
   declarations: [
     MyApp,
     Programacao,
-    SobreNos
+    SobreNos,
+    ProgramacaoDetailPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,7 +20,8 @@ import { MyApp } from './app.component';
   entryComponents: [
     MyApp,
     Programacao,
-    SobreNos
+    SobreNos,
+    ProgramacaoDetailPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Fire]
 })
