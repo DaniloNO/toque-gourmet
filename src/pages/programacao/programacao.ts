@@ -1,0 +1,33 @@
+import { ProgramacaoItens } from './../../model/programacaoItens';
+import { Fire } from './../../providers/fire';
+import { Component, NgZone } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-programacao',
+  templateUrl: 'programacao.html'
+})
+
+export class Programacao  {
+
+  //private tasks: any[] = [];
+  programacao:Array<ProgramacaoItens>;
+
+  constructor(public navCtrl: NavController, private fire: Fire, public ngZone: NgZone) {}
+
+  ionViewDidLoad() {
+
+    this.fire.referenceDataBase.on('value', (snapshot) =>{
+      this.ngZone.run( () => {
+        let innerArray = new Array();
+        snapshot.forEach(elemento => {
+          let el = elemento.val();
+          innerArray.push(el);
+        })
+        this.programacao = innerArray;
+      })
+    })
+  }
+
+
+}

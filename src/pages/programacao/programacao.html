@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Programação</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home"> 
+  <!--<ion-list *ngIf="programacao"> 
+    <ion-item *ngFor="let programacao of programacao"> 
+      <ion-label>{{programacao.curso}}</ion-label> 
+    </ion-item> 
+  </ion-list>  -->
+
+  <ion-card *ngFor="let programacao of programacao">
+
+    <div>
+      <img src="{{ programacao.imagem }}"/>
+    </div>
+
+    <ion-card-content>
+      <ion-card-title>
+       <h2><strong> {{ programacao.curso }}</strong></h2>
+      </ion-card-title>
+      <p>Data: {{programacao.dataInicial}} | {{programacao.horaInicial}} as {{programacao.horaFinal}}</p>
+      <p>Local: {{programacao.local}} </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='star'></ion-icon>
+          Participar
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='share-alt'></ion-icon>
+          Compartilhar
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+
+
+
+</ion-content>
+
