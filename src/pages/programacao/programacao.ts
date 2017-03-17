@@ -10,14 +10,11 @@ import { NavController } from 'ionic-angular';
 })
 
 export class Programacao  {
-
-  //private tasks: any[] = [];
   programacao:Array<ProgramacaoItens>;
 
   constructor(public navCtrl: NavController, private fire: Fire, public ngZone: NgZone) {}
 
   ionViewDidLoad() {
-
     this.fire.referenceDataBase.on('value', (snapshot) =>{
       this.ngZone.run( () => {
         let innerArray = new Array();
