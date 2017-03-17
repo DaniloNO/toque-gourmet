@@ -1,3 +1,4 @@
+import { InscricaoPage } from './../inscricao/inscricao';
 import { ProgramacaoDetailPage } from './../programacao-detail/programacao-detail';
 import { ProgramacaoItens } from './../../model/programacaoItens';
 import { Fire } from './../../providers/fire';
@@ -30,6 +31,12 @@ export class Programacao  {
   goToProgramacaoDetail(programacao){
     this.navCtrl.push(ProgramacaoDetailPage, {
       programacao: programacao
+    });
+  }
+
+  goToInscricao(programacao){
+    this.navCtrl.push(InscricaoPage, {
+      Programacao: programacao
     });
   }
 

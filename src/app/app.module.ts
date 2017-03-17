@@ -1,3 +1,4 @@
+import { InscricaoPage } from './../pages/inscricao/inscricao';
 import { ProgramacaoDetailPage } from './../pages/programacao-detail/programacao-detail';
 import { SobreNos } from './../pages/sobreNos/sobreNos';
 import { Programacao } from './../pages/programacao/programacao';
@@ -11,7 +12,8 @@ import { MyApp } from './app.component';
     MyApp,
     Programacao,
     SobreNos,
-    ProgramacaoDetailPage
+    ProgramacaoDetailPage,
+    InscricaoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,7 +23,8 @@ import { MyApp } from './app.component';
     MyApp,
     Programacao,
     SobreNos,
-    ProgramacaoDetailPage
+    ProgramacaoDetailPage,
+    InscricaoPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Fire]
 })
