@@ -29,7 +29,7 @@ export class MyApp {
       { title: 'Programação', component: Programacao },
       { title: 'Sobre Nós', component: SobreNos },
       { title: 'Mensagem Push', component: MessagemPushPage  },
-      { title: 'Forum', component: ForumPage },
+      { title: 'Fórum', component: ForumPage },
       { title: 'Serviços', component: ServicosPage },
       {title: 'Contados', component: ContatosPage},
       {title: 'Logout', component: LogoutPage}

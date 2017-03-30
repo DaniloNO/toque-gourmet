@@ -30,16 +30,17 @@
   </ion-row>
 
   <ion-row>
-    <ion-col width-50>
-      <button ion-button color="primary" full class="btnEntrarFacebook" (click)="loginComFacebook()">Entra com Facebook</button>
+    <ion-col>
+      <button ion-button color="primary" full class="btnEntrar" (click)="loginComFacebook()">Entra com Facebook</button>
     </ion-col>
-    <ion-col width-50>
+
+    <!--<ion-col width-50>
       <button ion-button color="primary" full class="btnEntrarGoogle" (click)="loginComGoogle()">Entra com Google+</button>
-    </ion-col>
+    </ion-col>-->
   </ion-row>
   <ion-row>
     <ion-col (click)="doRegister()">
-      <a>Inscreva-se</a>
+      <p style="text-align:center;">Ainda não tem conta ? Inscreva-se</p>
     </ion-col>
   </ion-row>
 </ion-content>

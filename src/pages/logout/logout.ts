@@ -34,6 +34,7 @@ export class LogoutPage {
             this.menuCtrl.enable(false);
             this.menuCtrl.swipeEnable(false);
             this.navCtrl.setRoot(LoginPage);
+            this.loginProvider.sair();
           }
         }
       ]
