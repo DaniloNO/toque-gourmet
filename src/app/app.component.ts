@@ -1,3 +1,4 @@
+import { LogoutPage } from './../pages/logout/logout';
 import { ContatosPage } from './../pages/contatos/contatos';
 import { ServicosPage } from './../pages/servicos/servicos';
 import { ForumPage } from './../pages/forum/forum';
@@ -30,7 +31,8 @@ export class MyApp {
       { title: 'Mensagem Push', component: MessagemPushPage  },
       { title: 'Forum', component: ForumPage },
       { title: 'Serviços', component: ServicosPage },
-      {title: 'Contados', component: ContatosPage}
+      {title: 'Contados', component: ContatosPage},
+      {title: 'Logout', component: LogoutPage}
     ];
 
   }

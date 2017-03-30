@@ -1,3 +1,4 @@
+import { LogoutPage } from './../pages/logout/logout';
 import { ServicosPage } from './../pages/servicos/servicos';
 import { MessagemPushPage } from './../pages/messagem-push/messagem-push';
 import { ForumPage } from './../pages/forum/forum';
@@ -27,7 +28,8 @@ import * as firebase from 'firebase';
     ContatosPage,
     ForumPage,
     MessagemPushPage,
-    ServicosPage
+    ServicosPage,
+    LogoutPage
 
   ],
   imports: [
@@ -45,7 +47,8 @@ import * as firebase from 'firebase';
     ContatosPage,
     ForumPage,
     MessagemPushPage,
-    ServicosPage
+    ServicosPage,
+    LogoutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, ProgramacaoProvider, LoginProvider]
 })
