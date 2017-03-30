@@ -1,7 +1,7 @@
+import { ProgramacaoProvider } from './../../providers/programacao-provider';
 import { InscricaoPage } from './../inscricao/inscricao';
 import { ProgramacaoDetailPage } from './../programacao-detail/programacao-detail';
 import { ProgramacaoItens } from './../../model/programacaoItens';
-import { Fire } from './../../providers/fire';
 import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -11,12 +11,12 @@ import { NavController } from 'ionic-angular';
 })
 
 export class Programacao  {
-  programacao:Array<ProgramacaoItens>;
+  programacao: Array<ProgramacaoItens>;
 
-  constructor(public navCtrl: NavController, private fire: Fire, public ngZone: NgZone) {}
+  constructor(public navCtrl: NavController, public programacaoProvider: ProgramacaoProvider, public ngZone: NgZone) {}
 
   ionViewDidLoad() {
-    this.fire.referenceDataBase.on('value', (snapshot) =>{
+    this.programacaoProvider.referenceProgramacao.on('value', (snapshot) =>{
       this.ngZone.run( () => {
         let innerArray = new Array();
         snapshot.forEach(elemento => {

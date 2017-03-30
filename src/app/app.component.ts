@@ -1,6 +1,10 @@
+import { ContatosPage } from './../pages/contatos/contatos';
+import { ServicosPage } from './../pages/servicos/servicos';
+import { ForumPage } from './../pages/forum/forum';
+import { MessagemPushPage } from './../pages/messagem-push/messagem-push';
+import { LoginPage } from './../pages/login/login';
 import { SobreNos } from './../pages/sobreNos/sobreNos';
 import { Programacao } from './../pages/programacao/programacao';
-import { Fire } from './../providers/fire';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
@@ -12,17 +16,21 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Programacao;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, fire:Fire) {
+  constructor(public platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Programação', component: Programacao },
-      { title: 'Sobre Nós', component: SobreNos }
+      { title: 'Sobre Nós', component: SobreNos },
+      { title: 'Mensagem Push', component: MessagemPushPage  },
+      { title: 'Forum', component: ForumPage },
+      { title: 'Serviços', component: ServicosPage },
+      {title: 'Contados', component: ContatosPage}
     ];
 
   }

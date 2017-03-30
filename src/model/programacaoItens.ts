@@ -9,7 +9,6 @@ export class ProgramacaoItens{
     descricao: string;
     ativo: boolean;
     
-
     constructor(curso?:string, dataInicial?:string, dataFinal?:string, horaInicial?:string, horaFinal?:string, local?:string, imagem?:string, descricao?:string){
         this.curso = curso;
         this.dataInicial = dataInicial;
