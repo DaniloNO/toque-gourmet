@@ -1,45 +1,53 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="primary-color">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Programação</ion-title>
+    <ion-title>Toque Gourmet - Programação</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="home">
-  <ion-card  *ngFor="let programacao of programacao">
-    <div>
-      <img (click)="goToProgramacaoDetail(programacao)" src="{{ programacao.imagem }}"/>
+  <ion-card class="card" *ngFor="let programacao of programacao">
+
+    <ion-card-header class="header-card">
+      {{ programacao.curso }}
+    </ion-card-header>
+
+    <div class="div-imagem-card">
+      <img class="imagem-card" src="{{ programacao.imagem }}"/>
     </div>
-    <ion-card-content (click)="goToProgramacaoDetail(programacao)">
-      <ion-card-title>
-        <h2><strong> {{ programacao.curso }}</strong></h2>
-      </ion-card-title>
+
+    <ion-card-content class="body">
       <p>Data: {{programacao.dataInicial}} | {{programacao.horaInicial}} as {{programacao.horaFinal}}</p>
-      <p>Local: {{programacao.local}} </p>
+      <p>Local: {{programacao.local}}</p>
     </ion-card-content>
 
-    <ion-row no-padding>
+    <ion-row class="foot-card">
+
       <ion-col>
-        <button  (click)="goToInscricao(programacao)" ion-button clear small color="danger" icon-left>
+        <button  (click)="goToInscricao(programacao)" ion-button clear small color="text-primary-color" icon-left>
           <ion-icon name='star'></ion-icon>
-          Participar
+          Reservar
         </button>
       </ion-col>
+
       <ion-col text-right>
-        <button ion-button clear small color="danger" icon-left>
+        <button ion-button clear small color="text-primary-color" icon-left>
           <ion-icon name='share-alt'></ion-icon>
           Compartilhar
         </button>
       </ion-col>
+
+      <ion-col text-right (click)="goToProgramacaoDetail(programacao)">
+        <button ion-button clear small color="text-primary-color" icon-left>
+          <ion-icon name='more'></ion-icon>
+          Detalhes
+        </button>
+      </ion-col>
+
     </ion-row>
 
   </ion-card>
-
-
-
-
-
 </ion-content>
 

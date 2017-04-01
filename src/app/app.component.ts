@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'Mensagem Push', component: MessagemPushPage  },
       { title: 'Fórum', component: ForumPage },
       { title: 'Serviços', component: ServicosPage },
-      {title: 'Contados', component: ContatosPage},
+      {title: 'Contatos', component: ContatosPage},
       {title: 'Logout', component: LogoutPage}
     ];
 

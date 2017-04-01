@@ -56,7 +56,6 @@ export class AppModule {
     constructor(){
       //noinspection TypeScriptUnresolvedFunction
       firebase.initializeApp(firebaseConfig);
-      console.log('Inicio Firebase');
     }
 }
 const firebaseConfig = {

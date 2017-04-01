@@ -1,3 +1,43 @@
 page-programacao {
+    .header-card{
+        padding-top: 3.5px;
+        padding-bottom: 3.5px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-left: 1.9px;
+        display: block;
+        background-color: #F44336;
+        font-size: 1.0em;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+    .home{
+        padding-left: 100px;
+
+    }
+
+    .card{
+        border: 1px solid #BDBDBD
+    }
+
+    .imagem-card{
+        margin-top: 1px; 
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .foot-card{
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+        display: block;
+        background-color: #F44336;
+    }
+    .body{
+        p{
+            font-weight: bold;
+        }
+        padding: 5px;
+    }   
 
 }
