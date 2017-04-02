@@ -1,13 +1,13 @@
+import { LocalizacaoPage } from './../pages/localizacao/localizacao';
+import { ReservaPage } from './../pages/reserva/reserva';
 import { LogoutPage } from './../pages/logout/logout';
 import { ServicosPage } from './../pages/servicos/servicos';
 import { MessagemPushPage } from './../pages/messagem-push/messagem-push';
 import { ForumPage } from './../pages/forum/forum';
-import { ContatosPage } from './../pages/contatos/contatos';
 import { LoginProvider } from './../providers/login-provider';
 import { ProgramacaoProvider } from './../providers/programacao-provider';
 import { RegistrarPage } from './../pages/registrar/registrar';
 import { LoginPage } from './../pages/login/login';
-import { InscricaoPage } from './../pages/inscricao/inscricao';
 import { ProgramacaoDetailPage } from './../pages/programacao-detail/programacao-detail';
 import { SobreNos } from './../pages/sobreNos/sobreNos';
 import { Programacao } from './../pages/programacao/programacao';
@@ -22,10 +22,10 @@ import * as firebase from 'firebase';
     Programacao,
     SobreNos,
     ProgramacaoDetailPage,
-    InscricaoPage,
+    ReservaPage,
     LoginPage,
     RegistrarPage,
-    ContatosPage,
+    LocalizacaoPage,
     ForumPage,
     MessagemPushPage,
     ServicosPage,
@@ -41,10 +41,10 @@ import * as firebase from 'firebase';
     Programacao,
     SobreNos,
     ProgramacaoDetailPage,
-    InscricaoPage,
+    ReservaPage,
     LoginPage,
     RegistrarPage,
-    ContatosPage,
+    LocalizacaoPage,
     ForumPage,
     MessagemPushPage,
     ServicosPage,

@@ -1,5 +1,5 @@
+import { LocalizacaoPage } from './../pages/localizacao/localizacao';
 import { LogoutPage } from './../pages/logout/logout';
-import { ContatosPage } from './../pages/contatos/contatos';
 import { ServicosPage } from './../pages/servicos/servicos';
 import { ForumPage } from './../pages/forum/forum';
 import { MessagemPushPage } from './../pages/messagem-push/messagem-push';
@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'Mensagem Push', component: MessagemPushPage  },
       { title: 'Fórum', component: ForumPage },
       { title: 'Serviços', component: ServicosPage },
-      {title: 'Contatos', component: ContatosPage},
+      {title: 'Localização', component: LocalizacaoPage},
       {title: 'Logout', component: LogoutPage}
     ];
 

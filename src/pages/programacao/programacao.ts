@@ -1,5 +1,5 @@
+import { ReservaPage } from './../reserva/reserva';
 import { ProgramacaoProvider } from './../../providers/programacao-provider';
-import { InscricaoPage } from './../inscricao/inscricao';
 import { ProgramacaoDetailPage } from './../programacao-detail/programacao-detail';
 import { ProgramacaoItens } from './../../model/programacaoItens';
 import { Component, NgZone } from '@angular/core';
@@ -35,7 +35,7 @@ export class Programacao  {
   }
 
   goToInscricao(programacao){
-    this.navCtrl.push(InscricaoPage, {
+    this.navCtrl.push(ReservaPage, {
       Programacao: programacao
     });
   }
